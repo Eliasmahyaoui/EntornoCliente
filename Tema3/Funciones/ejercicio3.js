@@ -5,4 +5,7 @@ function anonima(cadena, num){
     console.log(`EL texto es: ${cadena} y el numero es: ${num} `)
 
 }("Hola, el numero es" , 10)
-console.log(anonima(cadena, num));
+
+//Llamada a la funcion anonima
+anonima("Hola, el numero es" , 10)
+
