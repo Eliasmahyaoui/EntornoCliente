@@ -14,7 +14,6 @@ nombres.set('Marco',18);
 //Actualiza la edad de uno de ellos
 nombres.set('Elias', 27);
 
-
-for (const [nombre, edad] of nombres) {
+for (const [nombre,edad] of nombres) {
     console.log(`${nombre} tiene ${edad} años`);
 }
