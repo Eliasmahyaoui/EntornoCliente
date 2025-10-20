@@ -3,10 +3,10 @@ se deje vacío o se cancele.*/
 
 
 let palabras= [];
-let resultado= '';
+let palabra = '';
 
 do {
-    let palabra= prompt("Escribe aqui lo que quieras");
+    palabra = prompt("Escribe aqui lo que quieras");
     if (palabra=='') {
         
     }else{
@@ -14,7 +14,7 @@ do {
     }
 
 
-} while (palabra==null|| palabra=='');
+} while (palabra==null||palabra=='');
 
 console.log(palabras);
 
