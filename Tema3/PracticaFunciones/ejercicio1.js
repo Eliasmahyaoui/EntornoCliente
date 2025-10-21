@@ -3,17 +3,15 @@ se deje vacío o se cancele.*/
 
 
 let palabras= [];
-let palabra = '';
+//let palabra = '';
 
 do {
     palabra = prompt("Escribe aqui lo que quieras");
-    if (palabra=='') {
-        
-    }else{
-        palabras.push(palabra);
-    }
+   if (palabra!='') {
+    palabras.push(palabra);
+   }
 
-
-} while (palabra==null||palabra=='');
+} while (palabra!=='');
 
 console.log(palabras);
+
