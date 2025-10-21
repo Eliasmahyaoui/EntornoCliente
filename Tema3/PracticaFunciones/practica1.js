@@ -1,27 +1,89 @@
-/*Crea una aplicación web que pida al usuario palabras continuamente hasta que el popup
-se deje vacío o se cancele.
-A continuación, se eliminarán todas las palabras repetidas y además se ordenarán en
-español, pero en orden inverso (de la Z a la A) y se mostrará el resultado por pantalla.
-Utilizar funciones flecha si se considera apropiado.*/
 
-let palabras = [];
-let palabra = "";
+
+let palabras = [];//Declaramos un array vacio 
+let palabra = ""; //Y una palabra vacia
+
 
 do {
-  palabra = prompt("Escribe aqui lo que quieras");
-  if (palabra != "") {
-    palabras.push(palabra);
-  }
+	palabra = prompt("Escribe aqui lo que quieras");
+  		if (palabra != "") { //Sí la palabra no esta vacia...
+    		palabras.push(palabra);//Aqui metemos la palabra en el array
+    
+		}
 
-  
+
 } while (palabra !== "");
 
-//Comporbamos que si que se muestra
-console.log(palabras);
+console.log(palabras)//COmprueba que se muestran todas las palabras en el array 
+
+let elementosUnicos = new Set(palabras);//Aqui declaramos elementosUnicos que no se vean repetidos con SET
+
+console.log(elementosUnicos);
+
+let nuevoArray = [...elementosUnicos]; //Necesitamos pasar el set a un array otra vez para poder utilzar el metodo sort y ordenar
+
+let palabrasOrdenadas= nuevoArray.sort(); //Aqui está ordenado alfabeticamente
+
+console.log(palabrasOrdenadas); //Vemos si se muestra por pantalla
+
+palabrasOrdenadas.sort((a, b) => b.localeCompare(a, 'es')); // ordenar Z a A
 
 
 
-let elementosUnicos= new Set(palabras);
-let palabra1= ""
+function ejercicio1() {
+	let palabras = [];//Declaramos un array vacio 
+	let palabra = ""; //Y una palabra vacia
+
+
+	do {
+		palabra = prompt("Escribe aqui lo que quieras");
+		if (palabra != "") { //Sí la palabra no esta vacia...
+			palabras.push(palabra);//Aqui metemos la palabra en el array
+		
+		}
+
+
+	} while (palabra !== "");
+
+	console.log(palabras)//COmprueba que se muestran todas las palabras en el array 
+
+	let elementosUnicos = new Set(palabras);//Aqui declaramos elementosUnicos que no se vean repetidos con SET
+
+	console.log(elementosUnicos);
+
+	let nuevoArray = [...elementosUnicos]; //Necesitamos pasar el set a un array otra vez para poder utilzar el metodo sort y ordenar
+
+	let palabrasOrdenadas= nuevoArray.sort(); //Aqui está ordenado alfabeticamente
+
+	console.log(palabrasOrdenadas); //Vemos si se muestra por pantalla
+
+	palabrasOrdenadas.sort((a, b) => b.localeCompare(a, 'es')); // ordenar Z a A
+
+	
+}
+
+ejercicio1();
+
+//Funcion ejercicio 2
+
+function ejercicio2() {
+	let palabras = [];//Declaramos un array vacio 
+	let palabra = ""; //Y una palabra vacia
+
+
+	do {
+		palabra = prompt("Escribe aqui lo que quieras");
+		if (palabra != "") { //Sí la palabra no esta vacia...
+			palabras.push(palabra);//Aqui metemos la palabra en el array
+		
+		}
+
+
+	} while (palabra !== "");
+}
+
+
+
+
 
 
