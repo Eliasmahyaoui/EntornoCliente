@@ -45,7 +45,7 @@ function ejercicio1() {
 
 	} while (palabra !== "");
 
-	console.log(palabras)//COmprueba que se muestran todas las palabras en el array 
+	console.log(palabras)//Comprueba que se muestran todas las palabras en el array 
 
 	let elementosUnicos = new Set(palabras);//Aqui declaramos elementosUnicos que no se vean repetidos con SET
 
@@ -64,7 +64,7 @@ function ejercicio1() {
 
 ejercicio1();
 
-//Funcion ejercicio 2
+//Funcion Ejercicio 2
 
 function ejercicio2() {
 	let palabras = [];//Declaramos un array vacio 
