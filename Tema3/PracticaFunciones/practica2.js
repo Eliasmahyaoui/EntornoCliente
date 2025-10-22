@@ -1,25 +1,31 @@
-//Funcion ejercicio 2
+// Función práctica 2
 
-function ejercicio2() {
-	let palabras = []; //Declaramos un array vacio 
-	let palabra = ""; //Y una palabra vacia
+function Practica2() {
+    let palabras = []; // Declaramos un array vacío
+    let palabra = "";  // Variable vacía para guardar las palabras
 
+    // Pedimos palabras al usuario
+    do {
+        palabra = prompt("Escribe una palabra (deja vacío para salir)");
+        if (palabra != "") { // Si la palabra no está vacía
+            palabras.push(palabra); // La añadimos al array
+        }
+    } while (palabra != ""); // Salimos cuando está vacía
 
-	do {
-		palabra = prompt("Escribe aqui lo que quieras");
-		if (palabra != "") { //Sí la palabra no esta vacia...
-			palabras.push(palabra); //Aqui metemos la palabra en el array
+    console.log(palabras); // Mostramos las palabras guardadas en el array
 
-		}
-	} while (palabra !== "");
+    // Creamos un mapa para contar las repeticiones de cada palabra
+    const mapa = new Map();
 
-	console.log(palabras);
-	
-	let mapa = new Map(palabra); // Declaramos e inicializamos un map 
+    for (let palabra of palabras) {
+        if (mapa.has(palabra)) {
+            mapa.set(palabra, mapa.get(palabra) + 1);
+        } else {
+            mapa.set(palabra, 1);
+        }
+    }
 
-	console.log(mapa.get());
-	//mapa.set(27,"Elias").set(2,"Sofia").set(3,"Adrian").set(49,"Clyde").set(23,"Yung Beef");
-
-
+    console.log(mapa); // Mostramos el mapa con el recuento
 }
-ejercicio2();
+
+Practica2();
