@@ -16,5 +16,8 @@ alert(evento.type);
 
 
 document.getElementById("miObjeto").onclick= mostrarMensaje;
-document.getElementById("miObjeto").onclick= otraFuncion;//Se supone que sobreescribe la primera y sale esta funcion SOLO 
+
+//Se supone que sobreescribe la primera y sale esta funcion SOLO 
+document.getElementById("miObjeto").onclick= otraFuncion;
+//Este evento llama a la funcion que recibe un evento tipo type:podria ser de varios tipos
 document.getElementById("miObjeto").onclick=mostrarMensaje2;
