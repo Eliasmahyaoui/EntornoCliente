@@ -22,6 +22,7 @@ console.log(suma(4,5));
 
 //3.Funciones flecha
 
-const saludar = ()=>{
-    return a +b;
+const suma3 = (a,b)=> {
+    return a + b;
 }
+ console.log(suma3(4,10));
