@@ -33,6 +33,7 @@ password.onfocus = function() {
 // Al pulsar el botón enviar hace un a cosa o  otra dependiendo de si las condiciones están bien. 
 boton.onclick = function() {
     if (email.value.indexOf("@") == -1 || password.value.length < 8 || password.value.length < 10) {
+        password.style.background = "grey"; //Si no es correcto se pondra gris
         alert("Error, intentalo otra vez .");
     } else {
         alert("Formulario enviado correctamente.");
