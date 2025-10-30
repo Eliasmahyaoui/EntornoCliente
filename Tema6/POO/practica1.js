@@ -2,13 +2,13 @@ class Rectangulo {
 
   constructor(ancho, alto) {
 
-    if (ancho <= 0 || largo <= 0) {
+    if (ancho <= 0 || alto <= 0) {
       this.ancho = 1;
       this.alto = 1;
     } else {
 
-      this.ancho = width;
-      this.alto = height;
+      this.ancho = ancho;
+      this.alto = alto;
     }
 
   }
@@ -28,18 +28,20 @@ class Rectangulo {
   }
 
   comparar(rectangulo2){
-    
+    const area1= this.calcularArea();
+    const area2= rectangulo2.calcularArea();
    
-    if (this.calcularArea>=rectangulo2) {
+    if (area1>area2) {
       console.log("El rectangulo actual es mayor");
-    }else if (this.calcularArea==rectangulo2) {
+    }else if (area1==area2) {
       console.log("Son iguales")
     }else{
       console.log("El rectangulo actual es menor");
     }
     
-    rectangulo2= new Rectangulo(this.ancho, this.alto);
   }
 
-
 }
+const r1= new Rectangulo(4,5);
+const r2= new Rectangulo(6,8);
+r1.comparar(r2);
