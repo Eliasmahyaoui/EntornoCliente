@@ -45,3 +45,16 @@ class Rectangulo {
 const r1= new Rectangulo(4,5);
 const r2= new Rectangulo(6,8);
 r1.comparar(r2);
+
+
+//VALIDAR LOS RESULTADOS EN EL DOM 
+
+const resultado = document.getElementById("resultado");
+resultado.innerHTML = `
+  <p><b>Rectángulo 1:</b> ancho = ${r1.ancho}, alto = ${r1.alto}</p>
+  <p><b>Rectángulo 2:</b> ancho = ${r2.ancho}, alto = ${r2.alto}</p>
+  <p>Área rect1 = ${area1}</p>
+  <p>Área rect2 = ${area2}</p>
+  <p>Comparación: rect1 es <b>${comparar}</b> que rect2</p>
+  <p>Copia de rect1: ancho = ${copia.ancho}, alto = ${copia.alto}</p>
+`;
