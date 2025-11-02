@@ -48,8 +48,7 @@ r1.comparar(r2);
 
 
 //VALIDAR LOS RESULTADOS EN EL DOM 
-
-const resultado = document.getElementById("resultado");
+const DOM = document.getElementById("resultado");
 resultado.innerHTML = `
   <p><b>Rectángulo 1:</b> ancho = ${r1.ancho}, alto = ${r1.alto}</p>
   <p><b>Rectángulo 2:</b> ancho = ${r2.ancho}, alto = ${r2.alto}</p>

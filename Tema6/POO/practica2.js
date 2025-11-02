@@ -32,7 +32,7 @@ class Portatiles extends Ordenadores {
     }
 
     toString() {
-        return`El portátil es un ${this.marca} ${this.modelo} , con ${this.memoria} 
+        return `El portátil es un ${this.marca} ${this.modelo} , con ${this.memoria} 
         GB de RAM, ${this.capacidad} GB de almacenamiento, pantalla de ${this.pulgadas} pulgadas
          y ${this.autonomia} horas de autonomía.`;
     }
