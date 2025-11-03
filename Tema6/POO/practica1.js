@@ -44,18 +44,18 @@ class Rectangulo {
 }
 
 
-// Crear rectángulos
+// Creo rectángulos
 const r1 = new Rectangulo(4, 5);
 const r2 = new Rectangulo(6, 8);
 
-// Calcular resultados
+// Calculo los  resultados
 const area1 = r1.calcularArea();
 const area2 = r2.calcularArea();
 const comparar = r1.comparar(r2);
 const copia = r1.copia();
 
 
-//VALIDAR LOS RESULTADOS EN EL DOM 
+//Valido los resultados en el DOM 
 let DOM = document.getElementById("resultado");
 DOM.innerHTML = `
   <p>Rectángulo 1:</b> ancho = ${r1.ancho}, alto = ${r1.alto}</p>

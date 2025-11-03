@@ -49,4 +49,4 @@ console.log(p1.toString());
 let DOM= document.getElementById("resultado");
 
 /**Luegocon . innerHTML ponemos lo que queremos que salga por HTML */
-DOM.innerHTML= `<p>${o1.toString()}</p> <br> <p>${p1.toString}</p>`;
+DOM.innerHTML= `<p>${o1.toString()}</p> <br> <p>${p1.toString()}</p>`;
