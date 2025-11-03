@@ -3,11 +3,11 @@ página de google: https://www.google.es*/
 
 alert("Nos vemos ");
 setTimeout(() => {
-window.location.href= "google.com"
+window.location.href=  "https://www.google.es"
  ,5000
 });
    
-
-
-
 document.getElementById("Salida");
+
+
+
