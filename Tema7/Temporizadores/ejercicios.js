@@ -2,3 +2,8 @@
 página de google: https://www.google.es*/
 
 
+setTimeout(()=>alert(window.location.href="google.com"),5000);
+
+
+
+document.getElementById("Salida");
