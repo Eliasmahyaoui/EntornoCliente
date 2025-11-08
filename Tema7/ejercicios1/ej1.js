@@ -1,6 +1,6 @@
 
 
-console.log("Nos vamos");
+console.log("Nos vamos en 5 segundos a google");
 
 setTimeout(()=>{
 
