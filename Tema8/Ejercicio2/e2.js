@@ -13,7 +13,7 @@ function valorDiez(numero) {
 }
 
 //Comprobamos el resultado
-valorDiez(10)
+valorDiez(23)
   .then((resolve) => {
     console.log(resolve);
   })
@@ -26,5 +26,11 @@ valorDiez(10)
 
 /*SegundaTarea recibe el valor de primeraTarea, lo multiplica por
 por 2 y devuelve el nuevo valor*/
+
+
+
+
+
+
 
 

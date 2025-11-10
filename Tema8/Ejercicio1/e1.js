@@ -3,7 +3,7 @@ Debe resolverse con la suma, o rechazarse si alguno no es número.*/
 
 function sumarAsync(a, b) {
   return new Promise((resolve, reject) => {
-    let a = "HOla";
+    let a = 23;
     let b = 10;
     if (typeof a !== "number" || typeof b !== "number") {
       reject("Error: Ambos argumentos deben ser números.");
