@@ -6,14 +6,16 @@ function Practica1() {
 
 
 	do {
-		palabra = prompt("Escribe aqui lo que quieras");
+		palabra = prompt("Dime una palabra, deja vacio o cancela...");
 		if (palabra != "") { //Sí la palabra no esta vacia...
 			palabras.push(palabra);//Aqui metemos la palabra en el array
 		
+		}else{
+			break;
 		}
 
 
-	} while (palabra !== "");
+	} while (palabra != "");
 
 	console.log(palabras)//Comprueba que se muestran todas las palabras en el array 
 
