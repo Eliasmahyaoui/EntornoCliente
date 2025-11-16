@@ -1,3 +1,6 @@
+
+let resuldado= document.getElementById("resultado");s
+
 //Funcion práctica 1
 
 function Practica1() {
