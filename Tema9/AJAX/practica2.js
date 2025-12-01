@@ -20,7 +20,6 @@ boton.addEventListener("click", () => {
       document.getElementById("titulo").textContent = data.title;
       document.getElementById("precio").textContent = data.price;
 
-
       const datos = {
         id: data.id,
         title: data.title,
@@ -45,7 +44,6 @@ boton.addEventListener("click", () => {
         })
 
         .then((data) => {
-        
           document.getElementById("tituloPost").textContent = data.title;
         })
 
