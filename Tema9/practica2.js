@@ -28,30 +28,3 @@ boton.addEventListener('click', () => {
 });
 
 
-const datos = {
-  id: data.id,
-  title: data.title,
-  price: data.price
-  
-};
-
-fetch('https://httpbin.org/post ', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(datos)
-  })
-  .then(response => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-  })
-  .then(data => {
-    console.log('Respuesta del servidor:', data);
-  })
-  .catch(error => {
-    console.error('Error en la petición:', error);
-  });
