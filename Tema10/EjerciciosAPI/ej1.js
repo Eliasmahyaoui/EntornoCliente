@@ -16,7 +16,7 @@ if (pos.coords.latitude==0) {
 }
 
 
-//main.textContent = "Latitud:"  + pos.coords.latitude, + "Longitud:" + pos.coords.longitude;
+body.textContent = "Latitud:"  + pos.coords.latitude, + "Longitud:" + pos.coords.longitude;
 });
 
 
