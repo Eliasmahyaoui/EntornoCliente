@@ -2,9 +2,9 @@
 notificación con título, cuerpo y un ícono.*/
 
 boton.addEventListener("click", () => {
-    
+
   new Notification("Bienvenida", {
-    body: "Bienvenido/a a esta web",
+    body: "Bienvenido/a a esta web tete",
     icon: "weblogo.png",
   });
 
